@@ -6,14 +6,18 @@ public class InputOutput {
         int ID;
         String name, dept, institute;
 
-        System.out.println("Enter Your ID: ");
+        System.out.print("Enter Your ID: ");
         ID = input.nextInt();
-        System.out.println("Enter Your Name: ");
-        name = input.nextLine();
-        System.out.println("Enter Your Dept Name: ");
-        dept = input.nextLine();
-        System.out.println("Enter Your University Name: ");
-        institute = input.nextLine();
+
+        Scanner input1 = new Scanner(System.in);
+        System.out.print("Enter Your Name: ");
+        name = input1.nextLine();
+
+        System.out.print("Enter Your Dept Name: ");
+        dept = input1.nextLine();
+
+        System.out.print("Enter Your University Name: ");
+        institute = input1.nextLine();
 
         System.out.println("ID Number: " + ID);
         System.out.println("Name: " + name);
@@ -21,5 +25,6 @@ public class InputOutput {
         System.out.println("Institute: " + institute);
 
         input.close();
+        input1.close();
     }
 }
